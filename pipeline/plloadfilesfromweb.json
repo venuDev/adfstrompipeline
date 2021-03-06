@@ -11,7 +11,15 @@
 					"items": {
 						"value": "@split(variables('filelist'),'|')",
 						"type": "Expression"
-					}
+					},
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
