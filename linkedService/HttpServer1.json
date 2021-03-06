@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d1950_c20170120.csv.gz",
+			"url": "https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
