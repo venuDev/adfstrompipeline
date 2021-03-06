@@ -6,7 +6,11 @@
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "filename"
+					}
+				],
 				"typeProperties": {
 					"items": {
 						"value": "@split(variables('filelist'),'|')",
