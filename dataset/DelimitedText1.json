@@ -5,12 +5,21 @@
 			"referenceName": "HttpServer1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"fname": {
+				"type": "string",
+				"defaultValue": "StormEvents_details-ftp_v1.0_d1950_c20170120.csv.gz"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "StormEvents_details-ftp_v1.0_d1950_c20170120.csv.gz"
+				"relativeUrl": {
+					"value": "@dataset().fname",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"compressionCodec": "gzip",
