@@ -9,12 +9,14 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "StormEvents_details-ftp_v1.0_d1950_c20170120.csv.gz"
 			},
 			"columnDelimiter": ",",
 			"compressionCodec": "gzip",
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
